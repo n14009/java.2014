@@ -67,7 +67,7 @@ class Ex2_00 extends Ex{
 	}
 }
 
-class Ex2_000 extends Ex{
+/*class Ex2_000 extends Ex{
 	void execute(){
 		Random rand = new Random();
 
@@ -75,7 +75,7 @@ class Ex2_000 extends Ex{
 
 		System.out.println("今日のラッキーナンバーは" + luchy + "です。");
 	}
-}
+}*/
 class Ex2_3 extends Ex{
         void execute(){
                 Scanner stdIn = new Scanner(System.in);
@@ -137,11 +137,14 @@ public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
 
-		a = new Ex2_0();
+/*		a = new Ex2_0();
 		a = new Ex2_00();
                 a.execute();
 		a = new Ex2_000();
 		a.execute();
+               */ 
+                a = new Ex2_00();
+                a.execute();
                 a = new Ex2_1();
                 a.execute();
                 a = new Ex2_2();

@@ -133,11 +133,74 @@ class Ex2_6 extends Ex{
                           System.out.println("三角形の面積は" + (x * y) /2 + "です。");
         }
 }
+class Ex2_7 extends Ex{
+        void execute(){
+        Random rnd = new Random();
+
+        int ran    = rnd.nextInt(9)+1;
+        int mainus = rnd.nextInt(9)-9; 
+        int Long   = rnd.nextInt(90)+10; 
+
+                  
+        
+        
+                  System.out.println("１桁の正の整数値（すなわち1以上9以下の値）をランダムに生成して表示。" + ran + "です。");
+                  System.out.println("１桁の負の整数値（すなわち-9以上-1以下の値）をランダムに生成して表示。" + mainus + "です。");
+                  System.out.println("２桁の正の整数値（すんなち10以上99以下の値）をランダムに生成して表示。" + Long + "です。");
+        } 
+}
+class Ex2_8 extends Ex{
+        void execute(){
+        Random rnd = new Random();
+        Scanner stdIn = new Scanner(System.in);
+        System.out.print("キーボードから読み込んだ整数値プラスマイナス5の範囲の整数値をランダムに生成します。");
+        System.out.print("数字を入力してください");
+        int suji = stdIn.nextInt();
+        int ran  = rnd.nextInt(11)-5;
+                
+                  
+                    System.out.println(ran + suji + "です。");
+ 
+        }
+}
+class Ex2_9 extends Ex{
+          void execute(){
+          Random rnd = new Random();
+          System.out.println("実数値をランダムに生成して表示します。");
+
+          double rand =rnd.nextDouble();
+          int    hoge =rnd.nextInt(11);
+          int tekitou =rnd.nextInt(2)-1;
+  
+          
+                System.out.println("0.0以上1.0未満の実数値をランダムに生成して表示。" + rand + "です"); 
+                System.out.println("00.0以上10.0未満の実数値をランダムに生成して表示。" + rand + hoge + "です。");
+                System.out.println("-1.0以上1.0未満の実数値をランダムに生成して表示。" + rand + tekitou + "です"); 
+          }
+}
+class Ex2_10 extends Ex{
+          void execute(){
+          Scanner stdIn = new Scanner(System.in);
+
+          System.out.println("名と姓を入力してください");
+          System.out.print("姓:");
+          String sei = stdIn.next();
+
+          System.out.print("名:");
+          String mei = stdIn.next();
+
+          System.out.println("こんにちわ" + sei + mei + "さん。");
+
+          
+        }
+
+
+}
 public class Ex2 {
 	public static void main(String[] args){
 		Ex a;
 
-		a = new Ex2_0();
+/*		a = new Ex2_0();
 		a = new Ex2_00();
                 a.execute();
 		a = new Ex2_000();
@@ -147,13 +210,21 @@ public class Ex2 {
                 a = new Ex2_2();
                 a.execute();
                 a = new Ex2_3();
-                a.execute();
+               a.execute();
                 a = new Ex2_4();
                 a.execute();
                 a = new Ex2_5();
                 a.execute();
                 a = new Ex2_6();
                 a.execute();
-
+                */
+                a = new Ex2_7();
+                a.execute();
+                a = new Ex2_8();
+                a.execute();
+                a = new Ex2_9();
+                a.execute();
+                a = new Ex2_10();
+                a.execute();
 	}
 }

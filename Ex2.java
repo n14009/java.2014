@@ -170,7 +170,7 @@ class Ex2_9 extends Ex{
 
           double rand =rnd.nextDouble();
           int    hoge =rnd.nextInt(11);
-          int tekitou =rnd.nextInt(2)-1;
+          int tekitou =rnd.nextInt((2)-1);
   
           
                 System.out.println("0.0以上1.0未満の実数値をランダムに生成して表示。" + rand + "です"); 
@@ -220,13 +220,13 @@ public class Ex2 {
                 a = new Ex2_6();
                 a.execute();
                 */
-                a = new Ex2_7();
+            /*    a = new Ex2_7();
                 a.execute();
                 a = new Ex2_8();
-                a.execute();
+                a.execute();*/
                 a = new Ex2_9();
                 a.execute();
-                a = new Ex2_10();
-                a.execute();
+              //  a = new Ex2_10();
+               // a.execute();
 	}
 }

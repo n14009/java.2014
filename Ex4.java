@@ -1,35 +1,50 @@
-class Ex4{
-
+import java.util.Arrays;
+class Ex4{ 
 	public int [] ex4_1(int [] a){
-		
-		return a;
+
+		 Arrays.sort(a);
+                 return a;
 
 	}
 
-	public int [] ex4_2(int [] a){
-		
-		return a;
+	public int [] ex4_2(int [] a){   
+                Arrays.sort(a);
+                int size = a.length;
+                int[] b = new int[size];
 
-	}
-
+                for (int i = 0; size > 0;i++){
+                   b[i] = a[--size];
+                }
+                return b;
+        }
 	public String [] ex4_3(int [] a){
-		
-		String [] hantei = {"dummy"};
-		
+                int len = a.length;
+	        String[] hantei = new String[len];
+                for (int i = 0; len - 1 >= i;i++ ){
+                    if(a[i] > 0){
+                    hantei[i] = "正"; 
+                    }else if(a[i] == 0){
+                    hantei[i] = "零";
+                    }else {
+                    hantei[i] = "負";
+                    }
+                }
 		return hantei;
-
 	}
 
 	public int ex4_4(int a){
-		
-		return -1;
+	      String s = Integer.toString(a);
+              int len = s.length();
+		return len;
 
 	}
 
 	public int ex4_5(int a){
-		
-		return -1;
+	  int total = 0;    
+          for (int i =0; i <= a;i++){
+                 total += i; 
+              }	
+		return total;
 
 	}
 }
-
